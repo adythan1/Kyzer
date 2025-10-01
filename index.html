@@ -3,512 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>ALG Dynamics | Growth Marketing & Consumer Psychology - Data-Driven Strategies to Accelerate Sustainable Growth</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     <meta name="theme-color" content="#ffffff">
-    
-    <!-- Essential Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
-    <!-- Favicon -->
     <link rel="icon" href="logo1.png" sizes="32x32">
-    
-    <style>
-        /* Reset and Base Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: "Roboto Flex", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            font-size: 16px;
-            line-height: 1.6;
-            color: #7f7f7f;
-            background-color: #ededed;
-        }
-        
-        .container {
-            max-width: 1230px;
-            margin: 0 auto;
-            padding: 0 15px;
-        }
-        
-        /* Typography */
-        h1, h2, h3, h4 {
-            font-family: "Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            margin-bottom: 20px;
-        }
-        
-        h1 {
-            font-size: 80px;
-            line-height: 80px;
-            font-weight: 500;
-            color: #023020;
-        }
-        
-        h2 {
-            font-size: 50px;
-            line-height: 56px;
-            font-weight: 500;
-            color: #023020;
-        }
-        
-        h3 {
-            font-size: 36px;
-            line-height: 45px;
-            font-weight: 400;
-            color: #023020;
-        }
-        
-        h4 {
-            font-size: 24px;
-            line-height: 32px;
-            font-weight: 400;
-            color: #f95b24;
-        }
-        
-        h5 {
-            font-size: 20px;
-            line-height: 28px;
-            font-weight: 400;
-            color: #023020;
-        }
-        
-        h6 {
-            font-size: 15px;
-            line-height: 22px;
-            font-weight: 600;
-            color: #f95b24;
-        }
-        
-        /* Header Styles */
-        .header {
-            background-color: #f9f0ec;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1000;
-            padding: 15px 0;
-        }
-        
-        .header-inner {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        
-        .logo img {
-            height: 45px;
-            width: auto;
-        }
-        
-        .main-nav {
-            display: flex;
-            list-style: none;
-            gap: 40px;
-        }
-        
-        .main-nav a {
-            text-decoration: none;
-            color: #023020;
-            font-size: 19px;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-        
-        .main-nav a:hover {
-            color: #f95b24;
-        }
-        
-        .mobile-menu-toggle {
-            display: none;
-            background: none;
-            border: none;
-            font-size: 24px;
-            color: #f95b24;
-            cursor: pointer;
-        }
-        
-        /* Mobile Menu */
-        .mobile-menu {
-            display: none;
-            position: fixed;
-            top: 0;
-            right: -300px;
-            width: 300px;
-            height: 100vh;
-            background: #ffffff;
-            z-index: 9999;
-            transition: right 0.3s ease;
-            box-shadow: -2px 0 10px rgba(0,0,0,0.1);
-        }
-        
-        .mobile-menu.active {
-            right: 0;
-        }
-        
-        .mobile-menu-header {
-            padding: 20px;
-            border-bottom: 1px solid #eee;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .mobile-menu-close {
-            background: none;
-            border: none;
-            font-size: 24px;
-            cursor: pointer;
-        }
-        
-        .mobile-nav {
-            list-style: none;
-            padding: 20px 0;
-        }
-        
-        .mobile-nav li {
-            border-bottom: 1px solid #eee;
-        }
-        
-        .mobile-nav a {
-            display: block;
-            padding: 15px 20px;
-            text-decoration: none;
-            color: #333;
-            transition: color 0.3s ease;
-        }
-        
-        .mobile-nav a:hover {
-            color: #f95b24;
-        }
-        
-        /* Main Content */
-        .main-content {
-            margin-top: 75px;
-        }
-        
-        .section {
-            padding: 80px 0;
-        }
-        
-        .hero-section {
-            background-color: #ededed;
-            padding: 120px 0;
-        }
-        
-        .hero-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            align-items: center;
-        }
-        
-        .hero-text h1 {
-            margin-bottom: 30px;
-        }
-        
-        .hero-text p {
-            font-size: 18px;
-            margin-bottom: 40px;
-            font-weight: 500;
-        }
-        
-        .hero-image img {
-            width: 100%;
-            height: auto;
-            max-width: 500px;
-        }
-        
-        /* Services Section */
-        .services-section {
-            background-color: #ffffff;
-        }
-        
-        .section-header {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-        
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 30px;
-        }
-        
-        .service-item {
-            text-align: center;
-            padding: 40px 20px;
-            transition: transform 0.3s ease;
-        }
-        
-        .service-item:hover {
-            transform: translateY(-10px);
-        }
-        
-        .service-number {
-            font-size: 15px;
-            font-weight: 600;
-            color: #f95b24;
-            margin-bottom: 20px;
-        }
-        
-        .service-icon {
-            width: 80px;
-            height: 80px;
-            margin: 0 auto 20px;
-        }
-        
-        .service-icon img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-        }
-        
-        .service-item h4 {
-            margin-bottom: 15px;
-        }
-        
-        .service-item p {
-            font-size: 14px;
-            color: #7f7f7f;
-        }
-        
-        .learn-more {
-            color: #f95b24;
-            text-decoration: none;
-            font-weight: 500;
-        }
-        
-        /* Metrics Section */
-        .metrics-section {
-            background-color: #f9f0ec;
-        }
-        
-        .metrics-content {
-            display: grid;
-            grid-template-columns: 2fr 3fr;
-            gap: 80px;
-            align-items: center;
-        }
-        
-        .metrics-image img {
-            width: 100%;
-            height: auto;
-        }
-        
-        .metrics-stats {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-            margin: 40px 0;
-        }
-        
-        .stat-item {
-            text-align: center;
-        }
-        
-        .stat-number {
-            background-color: #f95b24;
-            color: #ffffff;
-            display: inline-block;
-            padding: 8px 15px;
-            border-radius: 6px;
-            font-size: 24px;
-            font-weight: 600;
-            margin-bottom: 10px;
-        }
-        
-        .stat-number.green {
-            background-color: #01B976;
-        }
-        
-        .stat-number.dark {
-            background-color: #023020;
-        }
-        
-        /* CTA Section */
-        .cta-section {
-            background-color: #ffffff;
-            text-align: center;
-        }
-        
-        /* Buttons */
-        .btn {
-            display: inline-block;
-            padding: 15px 30px;
-            border: 2px solid #f95b24;
-            color: #f95b24;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: 500;
-            font-family: "Space Grotesk", sans-serif;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            background: none;
-        }
-        
-        .btn:hover {
-            background-color: #f95b24;
-            color: #ffffff;
-        }
-        
-        .btn-primary {
-            background-color: #f95b24;
-            color: #ffffff;
-        }
-        
-        .btn-primary:hover {
-            background-color: #e54a1f;
-        }
-        
-        /* Footer */
-        .footer {
-            background-color: #023020;
-            color: #ffffff;
-            padding: 60px 0 30px;
-        }
-        
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 40px;
-            margin-bottom: 40px;
-        }
-        
-        .footer-item {
-            text-align: center;
-        }
-        
-        .footer-item i {
-            font-size: 24px;
-            color: #f95b24;
-            margin-bottom: 15px;
-        }
-        
-        .footer-item h5 {
-            color: #f95b24;
-            margin-bottom: 10px;
-        }
-        
-        .footer-bottom {
-            border-top: 1px solid rgba(255,255,255,0.1);
-            padding-top: 30px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .social-links {
-            display: flex;
-            gap: 15px;
-        }
-        
-        .social-links a {
-            color: #cccccc;
-            font-size: 20px;
-            transition: color 0.3s ease;
-        }
-        
-        .social-links a:hover {
-            color: #f95b24;
-        }
-        
-        /* Responsive Design */
-        @media (max-width: 1024px) {
-            h1 { font-size: 60px; line-height: 60px; }
-            h2 { font-size: 40px; line-height: 45px; }
-            .services-grid { grid-template-columns: repeat(2, 1fr); }
-        }
-        
-        @media (max-width: 768px) {
-            .main-nav { display: none; }
-            .mobile-menu-toggle { display: block; }
-            
-            h1 { font-size: 48px; line-height: 48px; }
-            h2 { font-size: 32px; line-height: 36px; }
-            
-            .hero-content {
-                grid-template-columns: 1fr;
-                gap: 40px;
-                text-align: center;
-            }
-            
-            .services-grid {
-                grid-template-columns: 1fr;
-                gap: 20px;
-            }
-            
-            .metrics-content {
-                grid-template-columns: 1fr;
-                gap: 40px;
-            }
-            
-            .metrics-stats {
-                grid-template-columns: 1fr;
-                gap: 20px;
-            }
-            
-            .footer-content {
-                grid-template-columns: 1fr;
-                gap: 30px;
-            }
-            
-            .footer-bottom {
-                flex-direction: column;
-                gap: 20px;
-                text-align: center;
-            }
-            
-            .section {
-                padding: 60px 0;
-            }
-            
-            .hero-section {
-                padding: 80px 0;
-            }
-        }
-        
-        /* Utility Classes */
-        .text-center { text-align: center; }
-        .mb-20 { margin-bottom: 20px; }
-        .mb-40 { margin-bottom: 40px; }
-        
-        /* Menu Overlay */
-        .menu-overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.5);
-            z-index: 9998;
-        }
-        
-        .menu-overlay.active {
-            display: block;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css?v=1">
 </head>
-
 <body>
-    <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="header-inner">
-                <div class="logo">
-                    <img src="logo1.png" alt="ALG Dynamics">
-                </div>
-                
-                <nav class="navigation">
+                <div class="logo"><img src="logo1.png" alt="ALG Dynamics"></div>
+                <nav>
                     <ul class="main-nav">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About Us</a></li>
@@ -517,22 +26,16 @@
                         <li><a href="#contact">Contact Us</a></li>
                     </ul>
                 </nav>
-                
-                <button class="mobile-menu-toggle" id="mobileMenuToggle">
-                    <i class="fas fa-bars"></i>
-                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle"><i class="fas fa-bars"></i></button>
             </div>
         </div>
     </header>
 
-    <!-- Mobile Menu -->
     <div class="menu-overlay" id="menuOverlay"></div>
     <div class="mobile-menu" id="mobileMenu">
         <div class="mobile-menu-header">
-            <img src="logo1.png" alt="ALG Dynamics" style="height: 30px;">
-            <button class="mobile-menu-close" id="mobileMenuClose">
-                <i class="fas fa-times"></i>
-            </button>
+            <img src="logo1.png" alt="ALG Dynamics" style="height:30px;">
+            <button class="mobile-menu-close" id="mobileMenuClose"><i class="fas fa-times"></i></button>
         </div>
         <nav>
             <ul class="mobile-nav">
@@ -545,9 +48,7 @@
         </nav>
     </div>
 
-    <!-- Main Content -->
     <main class="main-content">
-        <!-- Hero Section -->
         <section class="hero-section" id="home">
             <div class="container">
                 <div class="hero-content">
@@ -564,47 +65,34 @@
             </div>
         </section>
 
-        <!-- Services Section -->
         <section class="services-section section" id="services">
             <div class="container">
                 <div class="section-header">
                     <h6>services</h6>
                     <h2>What we do</h2>
                 </div>
-                
                 <div class="services-grid">
                     <div class="service-item">
                         <div class="service-number">01</div>
-                        <div class="service-icon">
-                            <img src="images/JKHHJ.png" alt="Growth Strategy">
-                        </div>
+                        <div class="service-icon"><img src="images/JKHHJ.png" alt="Growth Strategy"></div>
                         <h4>Growth<br>Strategy</h4>
                         <p>Scalable marketing frameworks to accelerate business growth.<br><br><a href="#" class="learn-more">Learn more</a></p>
                     </div>
-                    
                     <div class="service-item">
                         <div class="service-number">02</div>
-                        <div class="service-icon">
-                            <img src="images/DSFSFSDF.png" alt="Data Analytics">
-                        </div>
+                        <div class="service-icon"><img src="images/DSFSFSDF.png" alt="Data Analytics"></div>
                         <h4>Data &<br>Analytics</h4>
                         <p>Actionable insights that drive informed decision-making.<br><br><a href="#" class="learn-more">Learn more</a></p>
                     </div>
-                    
                     <div class="service-item">
                         <div class="service-number">03</div>
-                        <div class="service-icon">
-                            <img src="images/sddvdffd-Edited.png" alt="AI & Automation">
-                        </div>
+                        <div class="service-icon"><img src="images/sddvdffd-Edited.png" alt="AI & Automation"></div>
                         <h4>AI &<br>Automation</h4>
                         <p>Smart solutions to streamline and optimize marketing efforts.<br><br><a href="#" class="learn-more">Learn more</a></p>
                     </div>
-                    
                     <div class="service-item">
                         <div class="service-number">04</div>
-                        <div class="service-icon">
-                            <img src="images/assassda.png" alt="SEO & Visibility">
-                        </div>
+                        <div class="service-icon"><img src="images/assassda.png" alt="SEO & Visibility"></div>
                         <h4>SEO &<br>Visibility</h4>
                         <p>Attract better traffic. Convert with confidence. Grow consistently.<br><br><a href="#" class="learn-more">Learn more</a></p>
                     </div>
@@ -612,47 +100,29 @@
             </div>
         </section>
 
-        <!-- Success Metrics Section -->
         <section class="metrics-section section">
             <div class="container">
                 <div class="metrics-content">
                     <div class="metrics-image">
                         <img src="images/eadad.png" alt="Success Metrics">
                     </div>
-                    <div class="metrics-text">
+                    <div>
                         <h6>success metrics</h6>
                         <h2>We drive<br><span style="color:#f95b24">sustainable growth</span></h2>
                         <p><strong>Our Strategies Don't Just Work</strong></p>
                         <p>They scale your growth metrics through psychology marketing performance and data-backed marketing results.</p>
-                        
                         <div class="metrics-stats">
-                            <div class="stat-item">
-                                <div class="stat-number">60%</div>
-                                <h5>Predictive Accuracy</h5>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-number green">45%</div>
-                                <h5>Revenue growth</h5>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-number">40%</div>
-                                <h5>Operational efficiency</h5>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-number green">35%</div>
-                                <h5>Scalable Impact</h5>
-                            </div>
+                            <div class="stat-item"><div class="stat-number">60%</div><h5>Predictive Accuracy</h5></div>
+                            <div class="stat-item"><div class="stat-number green">45%</div><h5>Revenue growth</h5></div>
+                            <div class="stat-item"><div class="stat-number">40%</div><h5>Operational efficiency</h5></div>
+                            <div class="stat-item"><div class="stat-number green">35%</div><h5>Scalable Impact</h5></div>
                         </div>
-                        
-                        <a href="#contact" class="btn btn-primary">
-                            <i class="fas fa-arrow-right"></i> Start My Growth Journey
-                        </a>
+                        <a href="#contact" class="btn btn-primary"><i class="fas fa-arrow-right"></i> Start My Growth Journey</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- CTA Section -->
         <section class="cta-section section" id="contact">
             <div class="container">
                 <h6>algdynamics</h6>
@@ -662,7 +132,6 @@
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -682,7 +151,6 @@
                     <p>+1 (630) 562 6633<br>info@algdynamics.com</p>
                 </div>
             </div>
-            
             <div class="footer-bottom">
                 <p>&copy; 2025 ALG Dynamics | All Rights Reserved</p>
                 <div class="social-links">
@@ -695,57 +163,29 @@
         </div>
     </footer>
 
-    <!-- Essential JavaScript -->
     <script>
-        // Mobile Menu Toggle
-        document.addEventListener('DOMContentLoaded', function() {
-            const mobileMenuToggle = document.getElementById('mobileMenuToggle');
-            const mobileMenu = document.getElementById('mobileMenu');
-            const mobileMenuClose = document.getElementById('mobileMenuClose');
-            const menuOverlay = document.getElementById('menuOverlay');
-            
-            function openMobileMenu() {
-                mobileMenu.classList.add('active');
-                menuOverlay.classList.add('active');
-                document.body.style.overflow = 'hidden';
-            }
-            
-            function closeMobileMenu() {
-                mobileMenu.classList.remove('active');
-                menuOverlay.classList.remove('active');
-                document.body.style.overflow = '';
-            }
-            
-            mobileMenuToggle.addEventListener('click', openMobileMenu);
-            mobileMenuClose.addEventListener('click', closeMobileMenu);
-            menuOverlay.addEventListener('click', closeMobileMenu);
-            
-            // Close menu when clicking on nav links
-            const mobileNavLinks = document.querySelectorAll('.mobile-nav a');
-            mobileNavLinks.forEach(link => {
-                link.addEventListener('click', closeMobileMenu);
-            });
-            
-            // Smooth scrolling for anchor links
-            const navLinks = document.querySelectorAll('a[href^="#"]');
-            navLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href');
-                    const targetElement = document.querySelector(targetId);
-                    
-                    if (targetElement) {
-                        const headerHeight = document.querySelector('.header').offsetHeight;
-                        const targetPosition = targetElement.offsetTop - headerHeight;
-                        
-                        window.scrollTo({
-                            top: targetPosition,
-                            behavior: 'smooth'
-                        });
-                    }
-                });
-            });
-        });
+    document.addEventListener('DOMContentLoaded', () => {
+        const toggle = document.getElementById('mobileMenuToggle');
+        const menu = document.getElementById('mobileMenu');
+        const closeBtn = document.getElementById('mobileMenuClose');
+        const overlay = document.getElementById('menuOverlay');
+        const links = document.querySelectorAll('.mobile-nav a');
+
+        function openMenu(){
+            menu.classList.add('active');
+            overlay.classList.add('active');
+            document.body.style.overflow='hidden';
+        }
+        function closeMenu(){
+            menu.classList.remove('active');
+            overlay.classList.remove('active');
+            document.body.style.overflow='';
+        }
+        toggle.addEventListener('click', openMenu);
+        closeBtn.addEventListener('click', closeMenu);
+        overlay.addEventListener('click', closeMenu);
+        links.forEach(l => l.addEventListener('click', closeMenu));
+    });
     </script>
 </body>
 </html>

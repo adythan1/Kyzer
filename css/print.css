@@ -1,0 +1,12 @@
+/* Basic print stylesheet for Kyzer Solutions */
+* { background:transparent !important; box-shadow:none !important; }
+body { font:14px/1.4 "Roboto Flex", Arial, sans-serif; color:#000; }
+.header, .mobile-menu, .menu-overlay, #backToTop, .services-quick-nav, .inline-cta, .contact-hero-art { display:none !important; }
+.btn { border:1px solid #000 !important; color:#000 !important; background:none !important; padding:4px 8px !important; }
+.section { padding:20px 0 !important; }
+h1 { font-size:28px !important; }
+h2 { font-size:22px !important; }
+h3 { font-size:18px !important; }
+a { color:#000 !important; text-decoration:underline !important; }
+.footer { background:#fff !important; color:#000 !important; }
+.footer-item i { display:none !important; }

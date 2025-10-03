@@ -9,9 +9,50 @@
     const closeBtn=qs('#mobileMenuClose');
     const overlay=qs('#menuOverlay');
     if(!toggle||!menu||!overlay) return;
-    function open(){ menu.classList.add('active'); overlay.classList.add('active'); document.body.style.overflow='hidden'; }
-    function close(){ menu.classList.remove('active'); overlay.classList.remove('active'); document.body.style.overflow=''; }
-    toggle.addEventListener('click', open);
+
+    let lastFocus=null; // track previously focused element
+    const focusableSel='a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])';
+
+    function trapFocus(e){
+      if(!menu.classList.contains('active')) return;
+      if(e.key!=='Tab') return;
+      const focusable=menu.querySelectorAll(focusableSel);
+      if(!focusable.length) return;
+      const first=focusable[0];
+      const last=focusable[focusable.length-1];
+      if(e.shiftKey && document.activeElement===first){ e.preventDefault(); last.focus(); }
+      else if(!e.shiftKey && document.activeElement===last){ e.preventDefault(); first.focus(); }
+    }
+
+    function open(){
+      lastFocus=document.activeElement;
+      menu.classList.add('active');
+      overlay.classList.add('active');
+      document.body.style.overflow='hidden';
+      document.body.classList.add('menu-open');
+      toggle.setAttribute('aria-expanded','true');
+      menu.setAttribute('aria-hidden','false');
+      overlay.setAttribute('aria-hidden','false');
+      const firstLink=menu.querySelector('.mobile-nav a');
+      if(firstLink) firstLink.focus();
+      document.addEventListener('keydown', trapFocus);
+    }
+
+    function close(){
+      menu.classList.remove('active');
+      overlay.classList.remove('active');
+      document.body.style.overflow='';
+      document.body.classList.remove('menu-open');
+      toggle.setAttribute('aria-expanded','false');
+      menu.setAttribute('aria-hidden','true');
+      overlay.setAttribute('aria-hidden','true');
+      document.removeEventListener('keydown', trapFocus);
+      if(lastFocus) { try { lastFocus.focus(); } catch(_){} }
+    }
+
+    toggle.addEventListener('click', ()=>{
+      if(menu.classList.contains('active')) close(); else open();
+    });
     if(closeBtn) closeBtn.addEventListener('click', close);
     overlay.addEventListener('click', close);
     qsa('.mobile-nav a').forEach(a=>a.addEventListener('click', close));

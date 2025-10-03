@@ -3,6 +3,6 @@
   <url><loc>https://kyzersolutions.com/</loc></url>
   <url><loc>https://kyzersolutions.com/about.html</loc></url>
   <url><loc>https://kyzersolutions.com/services.html</loc></url>
-  <url><loc>https://kyzersolutions.com/solutions.html</loc></url>
+  <!-- Removed solutions.html (deprecated) -->
   <url><loc>https://kyzersolutions.com/contact.html</loc></url>
 </urlset>

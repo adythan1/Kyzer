@@ -216,7 +216,9 @@ body.menu-open { overflow:hidden; touch-action:none; }
 .detail-lead { font-size:1.03rem; line-height:1.6; margin:0 0 20px; color:#37413d; }
 .detail-list { list-style:disc; padding-left:20px; line-height:1.85; margin:0; font-size:.95rem; }
 .detail-media { position:relative; }
-.detail-illustration { width:100%; height:auto; display:block; border-radius:22px; box-shadow:0 18px 50px -22px rgba(0,0,0,.35); }
+.detail-illustration { width:100%; max-width:420px; height:auto; display:block; border-radius:22px; box-shadow:0 18px 50px -22px rgba(0,0,0,.35); }
+.service-detail .detail-media { display:flex; justify-content:flex-end; }
+@media (max-width:640px){ .service-detail .detail-media { justify-content:center; } }
 .first-mobile { order:-1; }
 
 /* Engagement ribbon */
@@ -343,7 +345,7 @@ h6 { font-size:15px; line-height:22px; font-weight:600; color:#f95b24; }
 .metrics-section .stat-item:after { content:""; position:absolute; left:50%; top:100%; width:34px; height:2px; background:linear-gradient(90deg,#f95b24,#023020); transform:translateX(-50%); margin-top:8px; opacity:.55; }
 .metrics-content { display:grid; grid-template-columns:2fr 3fr; gap:80px; align-items:center; }
 .metrics-image img { width:100%; height:auto; }
-.metrics-stats { display:grid; grid-template-columns:1fr 1fr; gap:30px; margin:40px 0; }
+.metrics-stats { display:grid; grid-template-columns:repeat(4, 1fr); gap:30px; margin:40px 0; }
 .stat-item { text-align:center; }
 .stat-number { background:#f95b24; color:#fff; display:inline-block; padding:8px 15px; border-radius:6px; font-size:24px; font-weight:600; margin-bottom:10px; }
 .stat-number.green { background:#01B976; }

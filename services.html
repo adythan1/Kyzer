@@ -32,6 +32,8 @@
     .btn-primary{background:#f95b24;color:#fff;}
     .inline-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px;}
     @media (max-width:780px){.main-nav{display:none}}
+    /* Full-width detail row below the two-column grid */
+    .detail-wide{margin-top:16px}
   </style>
   <script type="application/ld+json">{
     "@context": "https://schema.org",
@@ -86,8 +88,8 @@
       <div class="services-hero-inner">
         <div class="services-hero-text">
           <h6 class="intro-badge">Services</h6>
-          <h1>Strategic Advisory & Enablement Built for Measurable Compounding Value</h1>
-          <p class="lead">We align financial architecture, operating clarity, data trust and governed execution into coherent, trackable advancement layers.</p>
+          <h1>Our Services</h1>
+          <p class="lead">We partner with businesses to deliver data-powered financial strategy, actionable insights, and capability enablement. From financial advisory and consulting to analytics and capacity building, we help you transform goals into sustainable results.</p>
           <div class="inline-cta">
             <a href="contact.html" class="btn btn-primary">Request Discovery</a>
             <a href="#overview" class="btn secondary">View Capabilities</a>
@@ -96,8 +98,8 @@
         <div class="services-hero-art">
           <div class="services-collage">
             <figure class="svc-item primary"><img src="images/a-3d-isometric-illustration-depicting-a-_XavmkJjCRXiB3p8kX-jtQA_m-NTSYxTRXmyl0vRUwNxnA-Edited-389x500.png" alt="Systems advisory illustration" width="389" height="500" loading="lazy" decoding="async"></figure>
-            <figure class="svc-item secondary"><img src="images/Alg-Dynamics-02.svg" alt="Analytics dynamics diagram" width="480" height="480" loading="lazy" decoding="async"></figure>
-            <figure class="svc-item accent"><img src="images/blob-2.svg" alt="Decorative shape" width="170" height="170" loading="lazy" decoding="async"></figure>
+            <!-- <figure class="svc-item secondary"><img src="images/Alg-Dynamics-02.svg" alt="Analytics dynamics diagram" width="480" height="480" loading="lazy" decoding="async"></figure> -->
+            <!-- <figure class="svc-item accent"><img src="images/blob-2.svg" alt="Decorative shape" width="170" height="170" loading="lazy" decoding="async"></figure> -->
           </div>
         </div>
       </div>
@@ -127,26 +129,26 @@
       <div class="service-cards-grid">
         <a href="#advisory" class="service-card mini">
           <div class="svc-icon"><i class="fas fa-chart-line" aria-hidden="true"></i></div>
-          <h5>Financial Advisory</h5>
-          <p>Scenario modeling, capital allocation logic & economic signal integration.</p>
+          <h5>Financial Advisory for Businesses</h5>
+          <p>Tailored financial planning, capital optimization, cash flow management, and growth-oriented strategies for companies.</p>
           <span class="svc-link">Explore →</span>
         </a>
         <a href="#consulting" class="service-card mini">
           <div class="svc-icon"><i class="fas fa-briefcase" aria-hidden="true"></i></div>
           <h5>Business Consulting</h5>
-          <p>Operating model design, workflow simplification & execution governance.</p>
+          <p>Operational and strategic consulting to streamline processes, refine business models, and accelerate performance.</p>
           <span class="svc-link">Explore →</span>
         </a>
         <a href="#analytics" class="service-card mini">
           <div class="svc-icon"><i class="fas fa-database" aria-hidden="true"></i></div>
           <h5>Data & Analytics</h5>
-          <p>Modeling, lineage, instrumentation & adaptive decision layer value.</p>
+          <p>Advanced analytics, forecasting, dashboards, and data engineering to turn raw data into actionable intelligence.</p>
           <span class="svc-link">Explore →</span>
         </a>
         <a href="#training" class="service-card mini">
           <div class="svc-icon"><i class="fas fa-graduation-cap" aria-hidden="true"></i></div>
           <h5>Capability Enablement</h5>
-          <p>Playbooks, cohort learning tracks & embedded operating rhythm.</p>
+          <p>Training, change management, and leadership development to embed skills and sustain transformation in your organization.</p>
           <span class="svc-link">Explore →</span>
         </a>
       </div>
@@ -163,70 +165,60 @@
     </div>
   </section>
 
-  <!-- Capability Snapshots -->
-  <section class="section capability-snapshots" id="snapshots">
-    <div class="container">
-      <div class="section-header" style="margin-bottom:46px;">
-        <h6 class="intro-badge">Illustrative Snapshots</h6>
-        <h2>Execution & Insight Surfaces</h2>
-        <p class="tagline" style="max-width:820px;">Representative visual layers from engagements blending modeling, governance and enablement.</p>
-      </div>
-      <div class="snapshot-grid">
-        <figure class="snapshot-item">
-          <img src="images/eadad-480x480.png" alt="Operational analytics visualization" loading="lazy" width="480" height="480">
-          <figcaption>Operational Throughput & Cycle Baselines</figcaption>
-        </figure>
-        <figure class="snapshot-item">
-          <img src="images/dvsvsa-480x480.png" alt="Data modeling and lineage panel" loading="lazy" width="480" height="480">
-          <figcaption>Data Fabric: Semantic & Lineage Alignment</figcaption>
-        </figure>
-        <figure class="snapshot-item">
-          <img src="images/Alg-Dynamics-02-e1740463232186.png" alt="Financial scenario modeling artifact" loading="lazy" width="480" height="480">
-          <figcaption>Financial Scenario & Sensitivity Layering</figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
-
   <!-- Deep Dive: Financial Advisory -->
   <section class="section service-detail alt-bg" id="advisory">
-    <div class="container detail-grid">
-      <div class="detail-text">
-        <h6 class="intro-badge">Financial Advisory</h6>
-        <h2>Capital Alignment & Economic Clarity</h2>
-        <p class="detail-lead">Embedding forward-looking financial modeling and allocation discipline into strategic and operational decision cycles.</p>
-        <ul class="detail-list">
-          <li>Budget architecture, cost structure rationalization</li>
-          <li>Scenario & runway modeling with sensitivity layering</li>
-          <li>Unit economics baselining & pricing refinement</li>
-          <li>Capital allocation prioritization & governance cadence</li>
-          <li>Board / stakeholder reporting simplification</li>
-        </ul>
-        <a href="contact.html" class="btn btn-primary" style="margin-top:10px;">Discuss Advisory Scope</a>
+    <div class="container">
+      <div class="detail-grid">
+        <div class="detail-text">
+        <h6 class="intro-badge">Financial Advisory for Businesses</h6>
+        <h2>Strategic Financial Leadership That Drives Growth</h2>
+        <p class="detail-lead">In today's competitive business landscape, robust financial leadership determines whether companies thrive or struggle. Kyzer's comprehensive financial advisory services empower businesses to make informed decisions about capital allocation, budgeting strategies, funding opportunities, risk management, and long-term financial planning.</p>
+        <p>Our experienced financial advisors work closely with leadership teams to align your financial roadmap with strategic business objectives. We optimize for sustainable growth, operational resilience, and enhanced stakeholder value through customized financial solutions.</p>
+        </div>
+    <div class="detail-media">
+  <img src="images/istockphoto-1354932066-612x612.jpg" alt="Financial strategy visualization" class="detail-illustration" loading="lazy" width="612" height="612">
+    </div>
       </div>
-      <div class="detail-media">
-  <img src="images/Alg-Dynamics-02-e1740463232186.png" alt="Financial strategy visualization" class="detail-illustration" loading="lazy" width="480" height="480">
+      <div class="detail-wide">
+        <h6 class="intro-badge" style="margin-top:14px;">Our Financial Advisory Services Include:</h6>
+        <ul class="detail-list">
+          <li>Capital Allocation Strategy - Optimize resource deployment across initiatives, divisions, and investments to maximize ROI</li>
+          <li>Budget Planning & Forecasting - Develop comprehensive budgets with accurate projections that support strategic decision-making</li>
+          <li>Funding & Investment Advisory - Navigate equity raises, debt financing, venture capital, and alternative funding sources</li>
+          <li>Financial Risk Assessment - Identify vulnerabilities and implement risk mitigation strategies to protect business continuity</li>
+          <li>Scenario Planning & Modeling - Prepare for multiple business outcomes with sophisticated financial modeling</li>
+        </ul>
+        <p>Whether you're scaling operations, navigating a business pivot, pursuing market expansion, or preparing for acquisition, we design a custom financial architecture that transforms your ambition into achievable results.</p>
+        <a href="contact.html" class="btn btn-primary" style="margin-top:10px;">Discuss Advisory Scope</a>
       </div>
     </div>
   </section>
 
   <!-- Deep Dive: Business Consulting -->
   <section class="section service-detail" id="consulting">
-    <div class="container detail-grid">
-      <div class="detail-media first-mobile">
-  <img src="images/eadad-480x480.png" alt="Operational design graphic" class="detail-illustration" loading="lazy" width="480" height="480">
-      </div>
-      <div class="detail-text">
+    <div class="container">
+      <div class="detail-grid">
+        <div class="detail-text">
         <h6 class="intro-badge">Business Consulting</h6>
-        <h2>Operating Architecture & Execution Velocity</h2>
-        <p class="detail-lead">Reducing friction, clarifying ownership and sequencing transformation while preserving control surfaces.</p>
+        <h2>Operational Excellence Through Strategic Transformation</h2>
+        <p class="detail-lead">Sustainable competitive advantage requires both operational excellence and strategic clarity. Kyzer's business consulting practice helps organizations refine processes, optimize product and service portfolios, design scalable workflows, and strengthen organizational alignment from the C-suite to frontline teams.</p>
+        <p>Our consultants diagnose operational bottlenecks, define actionable strategic frameworks, and guide the execution of transformational changes that measurably improve efficiency, profit margins, and market positioning.</p>
+        </div>
+        <div class="detail-media">
+  <img src="images/gear-design-abstract-background-gears-cogwheels-seamless-pattern-industrial-technology-mechanical-engineering_1284-53278.jpg" alt="Operational design graphic" class="detail-illustration" loading="lazy" width="480" height="480">
+        </div>
+      </div>
+      <div class="detail-wide">
+        <h6 class="intro-badge" style="margin-top:14px;">Our Business Consulting Expertise:</h6>
         <ul class="detail-list">
-          <li>Process mapping & workflow simplification</li>
-          <li>Platform & integration strategy alignment</li>
-          <li>Release & governance cadence design</li>
-          <li>Automation opportunity surfacing</li>
-          <li>Execution & throughput KPIs instrumentation</li>
+          <li>Process Optimization - Streamline operations to eliminate waste, reduce costs, and accelerate time-to-market</li>
+          <li>Strategic Planning & Execution - Develop comprehensive strategies with clear roadmaps and accountability structures</li>
+          <li>Portfolio Management - Rationalize product and service offerings to focus resources on high-value opportunities</li>
+          <li>Organizational Design - Align structure, roles, and responsibilities with strategic priorities</li>
+          <li>Change Management - Navigate transitions smoothly with proven frameworks that drive adoption and minimize disruption</li>
+          <li>Performance Improvement - Implement metrics, dashboards, and continuous improvement methodologies</li>
         </ul>
+        <p>We don't just provide recommendations—we become your strategic partner in executing transformation, staying engaged until measurable results are achieved.</p>
         <a href="contact.html" class="btn secondary" style="margin-top:10px;">Request Mapping Session</a>
       </div>
     </div>
@@ -234,22 +226,30 @@
 
   <!-- Deep Dive: Data & Analytics -->
   <section class="section service-detail alt-bg" id="analytics">
-    <div class="container detail-grid">
-      <div class="detail-text">
+    <div class="container">
+      <div class="detail-grid">
+        <div class="detail-text">
         <h6 class="intro-badge">Data & Analytics</h6>
-        <h2>Decision Intelligence & Data Trust</h2>
-        <p class="detail-lead">Creating integrity, semantic alignment and activation pathways that improve decision velocity and confidence.</p>
-        <ul class="detail-list">
-          <li>Modeling, warehouse & lineage structuring</li>
-          <li>KPI taxonomy & decision layer composition</li>
-          <li>Predictive & scenario analytic integration</li>
-          <li>Quality checkpoints & governance patterns</li>
-          <li>Performance instrumentation loops</li>
-        </ul>
-        <a href="contact.html" class="btn btn-primary" style="margin-top:10px;">Explore Data Engagement</a>
+        <h2>Transform Data Into Actionable Business Intelligence</h2>
+        <p class="detail-lead">Modern businesses require real-time insights to make confident decisions in rapidly changing markets. Kyzer's data and analytics services transform raw information into strategic advantages through integrated data infrastructure, predictive modeling, interactive dashboards, and automated analytics workflows.</p>
+        <p>Our data scientists and analytics experts help you monitor critical KPIs, simulate business scenarios, identify emerging opportunities, and detect risks before they impact performance.</p>
+        </div>
+        <div class="detail-media">
+  <img src="images/coins-money-growing-plant-finance-600nw-577166506.jpg.webp" alt="Analytics modeling panel" class="detail-illustration" loading="lazy" width="480" height="480">
+        </div>
       </div>
-      <div class="detail-media">
-  <img src="images/dvsvsa-480x480.png" alt="Analytics modeling panel" class="detail-illustration" loading="lazy" width="480" height="480">
+      <div class="detail-wide">
+        <h6 class="intro-badge" style="margin-top:14px;">Our Data & Analytics Capabilities:</h6>
+        <ul class="detail-list">
+          <li>Data Infrastructure & Integration - Build scalable data warehouses and integrate disparate sources into unified systems</li>
+          <li>Business Intelligence Dashboards - Create intuitive, real-time visualizations that make complex data accessible to all stakeholders</li>
+          <li>Predictive Analytics & Forecasting - Leverage machine learning and statistical modeling to anticipate trends and outcomes</li>
+          <li>KPI Development & Tracking - Define meaningful metrics aligned with strategic objectives and implement continuous monitoring</li>
+          <li>Advanced Analytics - Apply sophisticated techniques including customer segmentation, cohort analysis, and attribution modeling</li>
+          <li>Data Governance & Quality - Establish processes that ensure data accuracy, security, and compliance</li>
+        </ul>
+        <p>With our data services, you gain unprecedented clarity over business performance, uncover hidden patterns and trends, and make evidence-based decisions that drive measurable outcomes—not educated guesses.</p>
+        <a href="contact.html" class="btn btn-primary" style="margin-top:10px;">Explore Data Engagement</a>
       </div>
     </div>
   </section>
@@ -257,21 +257,29 @@
 
   <!-- Deep Dive: Capability Enablement -->
   <section class="section service-detail" id="training">
-    <div class="container detail-grid">
-      <div class="detail-media first-mobile">
-  <img src="images/eadad-300x300.png" alt="Enablement and training module" class="detail-illustration" loading="lazy" width="300" height="300">
-      </div>
-      <div class="detail-text">
+    <div class="container">
+      <div class="detail-grid">
+        <div class="detail-text">
         <h6 class="intro-badge">Capability Enablement</h6>
-        <h2>Embedded Learning & Ownership Transfer</h2>
-        <p class="detail-lead">Reducing external dependency by instilling structural literacy, decision fluency and execution confidence internally.</p>
+        <h2>Build Internal Capacity for Sustainable Transformation</h2>
+        <p class="detail-lead">Even the most brilliant strategy fails without people equipped to execute it effectively. Kyzer's capability enablement services focus on building lasting internal capacity through comprehensive training programs, executive coaching, leadership development, and change adoption support.</p>
+        <p>We partner with your teams to embed new methodologies, accelerate digital literacy, develop critical competencies, and cultivate a culture of continuous improvement and innovation.</p>
+        </div>
+        <div class="detail-media">
+  <img src="images/photo-1579621970795-87facc2f976d.jpeg" alt="Enablement and training module" class="detail-illustration" loading="lazy" width="300" height="300">
+        </div>
+      </div>
+      <div class="detail-wide">
+        <h6 class="intro-badge" style="margin-top:14px;">Our Capability Enablement Services:</h6>
         <ul class="detail-list">
-          <li>Playbook & artifact generation</li>
-          <li>Cohort & role-based learning sequences</li>
-          <li>Shadowing & side-by-side applied coaching</li>
-          <li>Operating rhythm institutionalization</li>
-          <li>Capability maturity progression mapping</li>
+          <li>Custom Training Programs - Design and deliver targeted learning experiences for technical skills, leadership competencies, and process adoption</li>
+          <li>Executive & Leadership Coaching - Develop high-potential leaders through one-on-one coaching and peer learning cohorts</li>
+          <li>Change Adoption & Communication - Create engagement strategies that build buy-in and accelerate transformation initiatives</li>
+          <li>Digital Skills Development - Upskill teams in data literacy, analytics tools, automation platforms, and emerging technologies</li>
+          <li>Knowledge Transfer & Documentation - Capture institutional knowledge and create resources that support ongoing learning</li>
+          <li>Performance Coaching - Provide targeted support to individuals and teams to improve productivity and effectiveness</li>
         </ul>
+        <p>Our goal is to make your organization self-sustaining in its transformation journey, reducing dependency on external consultants while building a resilient, adaptive workforce capable of navigating future challenges.</p>
         <a href="contact.html" class="btn secondary" style="margin-top:10px;">Plan Enablement Track</a>
       </div>
     </div>

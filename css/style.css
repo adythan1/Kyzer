@@ -180,6 +180,7 @@ body.menu-open { overflow:hidden; touch-action:none; }
 .services-hero-inner { display:flex; gap:70px; align-items:flex-start; }
 .services-hero-text h1 { font-size:clamp(2.5rem, 4.2vw, 3.6rem); line-height:1.08; margin:0 0 24px; letter-spacing:-1px; }
 .services-hero-art { flex:0 0 420px; max-width:420px; position:relative; }
+.services-hero-art2 { max-width:420px; position:relative; }
 .services-collage { position:relative; width:100%; min-height:480px; }
 .services-collage .svc-item { position:absolute; margin:0; }
 .services-collage .svc-item img { display:block; width:100%; height:auto; border-radius:20px; box-shadow:0 18px 46px -20px rgba(0,0,0,0.28); }
